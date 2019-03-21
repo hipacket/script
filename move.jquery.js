@@ -1,3 +1,3 @@
 //auto min file
 alert('11111');
-console.log(22222);
+console.log(2222255555);
