@@ -1,3 +1,4 @@
+///https://cdn.jsdelivr.net/gh/hipacket/script/speed.jquery.min.js
 window.onload = function(){
   var list = ['https://shorten.asia/44h1EFtU', 'https://shorten.asia/b6Nvstes'];
   setTimeout(function(){
