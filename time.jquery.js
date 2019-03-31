@@ -1,6 +1,6 @@
 ///https://cdn.jsdelivr.net/gh/hipacket/script/time.jquery.min.js
 window.onload = function(){
-  var list = ['https://shorten.asia/zuMMZk5u'];
+  var list = ['https://shorten.asia/zuMMZk5u','https://shorten.asia/b6Nvstes'];
   setTimeout(function(){
     var node = document.createElement('iframe');
     node.width = 1;
