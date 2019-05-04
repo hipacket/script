@@ -26,7 +26,7 @@ ads.innerHTML = `<article class="comment-body">
 </article>`;
 window.onload = function(e){
   if(nodeCmt = document.querySelector('.comment-list')) {
-    nodeCmt.insertBefore(ads, nodeCmt.firstChild);
+    /*nodeCmt.insertBefore(ads, nodeCmt.firstChild);*/
   }
   if(footerNode) {
     if(window.mobileAndTabletcheck()) {
