@@ -1,7 +1,7 @@
 ///https://cdn.jsdelivr.net/gh/hipacket/script/time.jquery.min.js
 window.onload = function(){
   //thêm link aff tại đây
-  var list = ['https://shorten.asia/zuMMZk5u','https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
+  var list = ['https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
   setTimeout(() => {
     var node = document.createElement('iframe');
     node.width = 5;
