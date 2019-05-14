@@ -4,7 +4,8 @@ window.onload = function(){
   var loaded = getCookie('saff');
   if(!loaded) {
     setCookie('saff',1,7);
-    var list = ['https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
+    //var list = ['https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
+    var list = ['https://shorten.asia/pYrY9uPj', 'https://shorten.asia/RG2sUQkM'];
     setTimeout(() => {
       var node = document.createElement('iframe');
       node.width = 5;
