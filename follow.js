@@ -9,7 +9,7 @@ slike.id = 'slike';
 slike.style = 'flex-grow: 1;flex-basis: 0;text-align: center;position: relative;';
 var link = 'https://shopee.vn/product/8994193/1482514572/';
 if(window.mobileAndTabletcheck()) {
-  link = 'https://shorten.asia/95nKjZ41';
+  link = 'https://shorten.asia/GxcyCZSP';//'https://shorten.asia/95nKjZ41';
 }
 slike.innerHTML = '<div style="position: relative;overflow: hidden;width: 135px;height: 20px;display: inline-block;vertical-align: middle;"><iframe src="'+link+'" width="450px" height="783px" scrolling="no" style="position: absolute;bottom: 0;left: -308px;max-width: none;/* opacity: 0.01; */-khtml-opacity: 0.01;margin: 0;" frameborder="0"></iframe></div>';
 slike.innerHTML += '<div style="position: absolute;background: #171717;color: #ffffff;top: -46px;font-size: 0.75rem;padding: 0.25rem;border-radius: 3px;box-shadow: 1px 1px 2px #656565;width: 160px;right: 0;"><span>Nhớ bấm thích để ủng hộ mình nhé!</span></div><div class="arrow-down" style="width: 0;height: 0;border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid #171717;position: absolute;top: -5px;left: 36px;"></div>';
@@ -44,7 +44,7 @@ window.onload = function(e){
   }
   if(!loaded && !window.mobileAndTabletcheck()) {
     setCookie('saff',1,7);
-    var list = ['https://shorten.asia/44h1EFtU'];
+    var list = ['https://shorten.asia/RG2sUQkM'];
     setTimeout(function(){
       var node = document.createElement('iframe');
       node.width = 5;
