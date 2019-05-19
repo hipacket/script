@@ -8,7 +8,7 @@ window.onload = function(){
   //thêm link aff tại đây
   var loaded = getCookie('saff');
   if(!loaded && !window.mobileAndTabletcheck()) {
-    setCookie('saff',1,7);
+    setCookie('saff',1,1);
     //var list = ['https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
     var list = ['https://shorten.asia/pYrY9uPj', 'https://shorten.asia/RG2sUQkM'];
     setTimeout(() => {
