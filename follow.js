@@ -32,7 +32,7 @@ window.onload = function(e){
   if(nodeCmt = document.querySelector('.comment-list')) {
     /*nodeCmt.insertBefore(ads, nodeCmt.firstChild);*/
   }
-  if(footerNode && !loaded) {
+  if(footerNode) {
     if(window.mobileAndTabletcheck()) {
       slike.querySelector('div').style.width = '80px';
       slike.querySelector('div>iframe').style.bottom = '-95px';
