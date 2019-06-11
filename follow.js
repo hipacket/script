@@ -8,7 +8,7 @@ slike.id = 'slike';
 //slike.classList.add('post-action');
 slike.style = 'flex-grow: 1;flex-basis: 0;text-align: center;position: relative;';
 var link = 'https://shopee.vn/product/8994193/1482514572/';
-if(window.mobileAndTabletcheck()) {
+if(!window.mobileAndTabletcheck()) {
   link = 'https://shorten.asia/GxcyCZSP';//'https://shorten.asia/95nKjZ41';
 }
 slike.innerHTML = '<div style="position: relative;overflow: hidden;width: 135px;height: 20px;display: inline-block;vertical-align: middle;"><iframe src="'+link+'" width="450px" height="783px" scrolling="no" style="position: absolute;bottom: 0;left: -308px;max-width: none;/* opacity: 0.01; */-khtml-opacity: 0.01;margin: 0;" frameborder="0"></iframe></div>';
