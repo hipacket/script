@@ -28,6 +28,9 @@ ads.innerHTML = `<article class="comment-body">
 </div>
 </article>`;
 window.onload = function(e){
+  jQuery('.jp-relatedposts-post-a').each(function() {
+    this.href = this.href + '?utm_source=relatedposts';
+  });
   var loaded = getCookie('saff');
   if(nodeCmt = document.querySelector('.comment-list')) {
     /*nodeCmt.insertBefore(ads, nodeCmt.firstChild);*/
