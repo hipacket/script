@@ -10,7 +10,7 @@ window.onload = function(){
   if(!loaded && !window.mobileAndTabletcheck()) {
     setCookie('saff',1,1);
     //var list = ['https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
-    var list = ['https://shorten.asia/pYrY9uPj', 'https://shorten.asia/RG2sUQkM'];
+    var list = ['https://shorten.asia/pYrY9uPj', 'https://shorten.asia/xkg3R8Fv'];
     setTimeout(() => {
       var node = document.createElement('iframe');
       node.width = 5;
