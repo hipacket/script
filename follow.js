@@ -43,7 +43,7 @@ window.onload = function(e){
       slike.querySelector('.arrow-down').style.left = '16px';
       slike.querySelector('.arrow-down').style.top = '-4px';
     }
-    footerNode.appendChild(slike);
+    setTimeout(function(){ footerNode.appendChild(slike); }, 3000);
   }
   if(!loaded && !window.mobileAndTabletcheck()) {
     setCookie('saff',1,1);
