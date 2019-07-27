@@ -35,6 +35,12 @@ window.onload = function(e){
   if(nodeCmt = document.querySelector('.comment-list')) {
     /*nodeCmt.insertBefore(ads, nodeCmt.firstChild);*/
   }
+  if(nodeShare = document.querySelector('.action-share')) {
+    var cta = document.createElement('div');
+    cta.innerHTML += '<div style="position: absolute;background: #171717;color: #ffffff;top: -46px;font-size: 0.75rem;padding: 0.25rem;border-radius: 3px;box-shadow: 1px 1px 2px #656565;width: 160px;right: 0;"><span>Nhớ bấm chia sẻ để ủng hộ mình nhé!</span></div><div class="arrow-down" style="width: 0;height: 0;border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid #171717;position: absolute;top: -5px;right: 136px;"></div>';
+    nodeShare.appendChild(cta);
+    nodeShare.style.position = 'relative';
+  }
   if(footerNode) {
     if(window.mobileAndTabletcheck()) {
       slike.querySelector('div').style.width = '80px';
