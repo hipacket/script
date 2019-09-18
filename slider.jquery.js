@@ -1,4 +1,4 @@
-///https://cdn.jsdelivr.net/gh/hipacket/script/silder.jquery.min.js
+///https://cdn.jsdelivr.net/gh/hipacket/script/slider.jquery.min.js
 window.onload = function(){
   //thêm link aff tại đây
   var loaded = getCookie('saff');
