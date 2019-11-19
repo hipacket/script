@@ -27,10 +27,18 @@ ads.innerHTML = `<article class="comment-body">
 </div>
 </div>
 </article>`;
+var flike = document.createElement('div');
+flike.setAttribute('style', 'text-align: center; margin-top: 15px;');
+flike.innerHTML = '<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Freviews.vn%2F&width=106&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId=265281440572858" width="106" height="36" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>';
 window.onload = function(e){
   jQuery('.jp-relatedposts-post-a').each(function() {
     this.href = this.href + '?utm_source=relatedposts';
   });
+  setTimeout(() => {
+    if(node_content = document.querySelector('.entry-content')) {
+      node_content.append(flike);
+    }
+  }, 5000);
   var loaded = getCookie('saff');
   if(nodeCmt = document.querySelector('.comment-list')) {
     /*nodeCmt.insertBefore(ads, nodeCmt.firstChild);*/
