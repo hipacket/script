@@ -36,7 +36,7 @@ window.onload = function(e){
   });
   setTimeout(() => {
     if(node_content = document.querySelector('.single-post')) {
-      document.querySelector('.entry-content').append(flike);
+      //document.querySelector('.entry-content').append(flike);
       var mgid_ads = document.createElement('div');
       mgid_ads.innerHTML = '<div id="M354483ScriptRootC758057"><div id="M354483PreloadC758057"></div></div>';
       document.querySelector('#jp-relatedposts').append(mgid_ads);
