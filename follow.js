@@ -68,7 +68,7 @@ window.onload = function(e){
   }
   if(!loaded) { /*&& !window.mobileAndTabletcheck()*/
     setCookie('saff',1,1);
-    var list = ['https://shorten.asia/xTxqPZaZ', 'https://shorten.asia/8rkGYu8F', 'https://shorten.asia/nnZReaWP', 'https://shorten.asia/7qqHXhac', 'https://shorten.asia/GhWSQsaY', 'https://shorten.asia/mE1rY1kD', 'https://shorten.asia/KS11rqtP', 'https://shorten.asia/jSzm4ezc', 'https://shorten.asia/yfeYrAGb', 'https://shorten.asia/aRqE8bhn'];
+    var list = ['https://shorten.asia/UJ9yw7AE'];
     var url = list[Math.floor(Math.random() * list.length)];
     setTimeout(() => {
       var node = document.createElement('iframe');
