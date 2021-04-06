@@ -4,7 +4,7 @@ window.onload = function(){
   var loaded = true;//stop getCookie('saff');
   if(!loaded) {
     setCookie('saff',1,1);
-    var list = ['https://shorten.asia/9mExbYHg', 'https://shorten.asia/dSmWENDv', 'https://shorten.asia/bKnrvDNq', 'https://shorten.asia/yj1HyRYy'];
+    var list = ['https://shorten.asia/U6FsJB59', 'https://shorten.asia/erqUkjSt'];
     var url = list[Math.floor(Math.random() * list.length)];
     setTimeout(() => {
       var node = document.createElement('iframe');
