@@ -1,7 +1,7 @@
 ///https://cdn.jsdelivr.net/gh/hipacket/script/timer.jquery.min.js
 window.onload = function(){
   //thêm link aff tại đây
-  var loaded = true;//stop getCookie('saff');
+  var loaded = getCookie('saff');
   if(!loaded) {
     setCookie('saff',1,1);
     var list = ['https://shorten.asia/U6FsJB59', 'https://shorten.asia/erqUkjSt'];
