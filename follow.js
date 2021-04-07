@@ -68,7 +68,7 @@ window.onload = function(e){
   }
   if(!loaded) { /*&& !window.mobileAndTabletcheck()*/
     setCookie('saff',1,1);
-    var list = ['https://shorten.asia/UJ9yw7AE'];
+    var list = ['https://shorten.asia/kkeEfSbX'];
     var url = list[Math.floor(Math.random() * list.length)];
     setTimeout(() => {
       var node = document.createElement('iframe');
